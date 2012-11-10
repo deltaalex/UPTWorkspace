@@ -39,13 +39,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestUI.java" partName="TestUI.java" path="E:/0 Work/Eclipse Workspace/UPTWorkspace/upt.social.product/src/upt/social/product/TestUI.java" title="TestUI.java" tooltip="upt.social.product/src/upt/social/product/TestUI.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestUI.java" partName="TestUI.java" path="E:/0 Work/Eclipse Workspace/UPTWorkspace/upt.social.product/src/upt/social/product/TestUI.java" title="TestUI.java" tooltip="upt.social.product/src/upt/social/product/TestUI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/upt.social.product/src/upt/social/product/TestUI.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="569" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="498" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WSDDSocialGenerator.java" partName="WSDDSocialGenerator.java" path="E:/0 Work/Eclipse Workspace/UPTWorkspace/upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java" title="WSDDSocialGenerator.java" tooltip="upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6826" selectionTopPixel="3378"/>
 </editor>
 </editors>
 <views>
@@ -75,6 +80,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (71 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -378,7 +386,6 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.ui/src/upt/social/ui/PageMeshConfiguration.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.simulation/src/upt/social/generation/SocialGenerator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.simulation/src/upt/social/generation/scalefree/ScaleFreeSocialGenerator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.product/src/upt/social/product/TestUI.java"/>
@@ -398,156 +405,157 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.noc.ui/src/upt/noc/ui/PageSimulation.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.noc.ui/src/upt/noc/ui/assist/NocAboutView.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.product/src/upt/social/product/TestUI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java"/>
 </editors>
-<item historyLabel="PageMeshConfiguration.java" index="0">
-<position info="not_deleted" x="7083" y="0"/>
-</item>
-<item historyLabel="SocialGenerator.java" index="1">
+<item historyLabel="SocialGenerator.java" index="0">
 <position info="not_deleted" x="681" y="0"/>
 </item>
-<item historyLabel="ScaleFreeSocialGenerator.java" index="2">
+<item historyLabel="ScaleFreeSocialGenerator.java" index="1">
 <position info="not_deleted" x="973" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="3">
+<item historyLabel="TestUI.java" index="2">
 <position info="not_deleted" x="498" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="888" y="19"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3559" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6264" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="3">
+<item historyLabel="TestUI.java" index="2">
 <position info="not_deleted" x="735" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6264" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3639" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6825" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6871" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6838" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6863" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6886" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3523" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3693" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3749" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6863" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6886" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3523" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="3693" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="4">
+<item historyLabel="WSDDSocialGenerator.java" index="3">
 <position info="not_deleted" x="6857" y="0"/>
 </item>
-<item historyLabel="INode.java" index="5">
+<item historyLabel="INode.java" index="4">
 <position info="not_deleted" x="133" y="0"/>
 </item>
-<item historyLabel="ComplexAgent.java" index="6">
+<item historyLabel="ComplexAgent.java" index="5">
 <position info="not_deleted" x="483" y="12"/>
 </item>
-<item historyLabel="ComplexAgent.java" index="6">
+<item historyLabel="ComplexAgent.java" index="5">
 <position info="not_deleted" x="1760" y="0"/>
 </item>
-<item historyLabel="ComplexAgent.java" index="6">
+<item historyLabel="ComplexAgent.java" index="5">
 <position info="not_deleted" x="1854" y="0"/>
 </item>
-<item historyLabel="DiscreteAgent.java" index="7">
+<item historyLabel="DiscreteAgent.java" index="6">
 <position info="not_deleted" x="368" y="13"/>
 </item>
-<item historyLabel="AnalogAgent.java" index="8">
+<item historyLabel="AnalogAgent.java" index="7">
 <position info="not_deleted" x="469" y="11"/>
 </item>
-<item historyLabel="AnalogStubbornAgent.java" index="9">
+<item historyLabel="AnalogStubbornAgent.java" index="8">
 <position info="not_deleted" x="695" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="10">
+<item historyLabel="TestUI.java" index="9">
 <position info="not_deleted" x="498" y="0"/>
 </item>
-<item historyLabel="ScaleFreeSocialGenerator.java" index="11">
+<item historyLabel="ScaleFreeSocialGenerator.java" index="10">
 <position info="not_deleted" x="3724" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="12">
+<item historyLabel="TestUI.java" index="11">
 <position info="not_deleted" x="498" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="13">
+<item historyLabel="WSDDSocialGenerator.java" index="12">
 <position info="not_deleted" x="6907" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="12">
+<item historyLabel="TestUI.java" index="11">
 <position info="not_deleted" x="495" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="13">
+<item historyLabel="WSDDSocialGenerator.java" index="12">
 <position info="not_deleted" x="6856" y="0"/>
 </item>
-<item historyLabel="TestUI.java" index="12">
+<item historyLabel="TestUI.java" index="11">
 <position info="not_deleted" x="495" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="13">
+<item historyLabel="WSDDSocialGenerator.java" index="12">
 <position info="not_deleted" x="6137" y="0"/>
 </item>
-<item historyLabel="PageConfiguration.java" index="14">
+<item historyLabel="PageConfiguration.java" index="13">
 <position info="not_deleted" x="714" y="0"/>
 </item>
-<item historyLabel="PageHome.java" index="15">
+<item historyLabel="PageHome.java" index="14">
 <position info="not_deleted" x="655" y="0"/>
 </item>
-<item historyLabel="UIConfig.java" index="16">
+<item historyLabel="UIConfig.java" index="15">
 <position info="not_deleted" x="5" y="0"/>
 </item>
-<item historyLabel="PageSimulation.java" index="17">
+<item historyLabel="PageSimulation.java" index="16">
 <position info="not_deleted" x="809" y="0"/>
 </item>
-<item historyLabel="PageConfiguration.java" index="14">
+<item historyLabel="PageConfiguration.java" index="13">
 <position info="not_deleted" x="952" y="0"/>
 </item>
-<item historyLabel="NocAboutView.java" index="18">
+<item historyLabel="NocAboutView.java" index="17">
 <position info="not_deleted" x="473" y="0"/>
 </item>
-<item historyLabel="WSDDSocialGenerator.java" index="13">
+<item historyLabel="WSDDSocialGenerator.java" index="12">
 <position info="not_deleted" x="6137" y="0"/>
 </item>
-<item active="true" historyLabel="TestUI.java" index="19">
+<item historyLabel="TestUI.java" index="18">
 <position info="not_deleted" x="341" y="6"/>
+</item>
+<item active="true" historyLabel="WSDDSocialGenerator.java" index="19">
+<position info="not_deleted" x="888" y="19"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -567,6 +575,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WSDDSocialGenerator.java" tooltip="upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java">
+<persistable path="/upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestUI.java" tooltip="upt.social.product/src/upt/social/product/TestUI.java">
 <persistable path="/upt.social.product/src/upt/social/product/TestUI.java"/>
 </file>
@@ -587,9 +598,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="INode.java" tooltip="upt.social.model/src/upt/social/model/INode.java">
 <persistable path="/upt.social.model/src/upt/social/model/INode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WSDDSocialGenerator.java" tooltip="upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java">
-<persistable path="/upt.social.simulation/src/upt/social/generation/advanced/WSDDSocialGenerator.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SocialGenerator.java" tooltip="upt.social.simulation/src/upt/social/generation/SocialGenerator.java">
 <persistable path="/upt.social.simulation/src/upt/social/generation/SocialGenerator.java"/>
