@@ -1,0 +1,6 @@
+#Sun Nov 11 01:09:53 EET 2012
+mobius.escjava2.plugin.quiet=true
+eclipse.preferences.version=1
+mobius.escjava2.plugin.checkPurity=false
+mobius.escjava2.plugin.cautionMessages=false
+mobius.escjava2.plugin.osname=Windows

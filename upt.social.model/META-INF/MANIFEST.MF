@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: upt.social.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.social.model,
+ upt.social.model.analog,
+ upt.social.model.complex,
+ upt.social.model.discrete,
+ upt.social.model.factory,
+ upt.social.model.helpers,
+ upt.social.model.opinion

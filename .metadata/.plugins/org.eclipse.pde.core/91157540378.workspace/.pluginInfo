@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="792" localization="OSGI-INF/l10n/bundle" name="Model" project="upt.social.model"/>
+	<bundle bundleID="793" class="upt.social.product.Activator" localization="OSGI-INF/l10n/bundle" name="Product" project="upt.social.product"/>
+	<bundle bundleID="794" localization="OSGI-INF/l10n/bundle" name="Ui" project="upt.ui"/>
+	<bundle bundleID="795" class="upt.twitter.model.Activator" localization="OSGI-INF/l10n/bundle" name="Model" project="upt.twitter.model"/>
+	<bundle bundleID="796" localization="OSGI-INF/l10n/bundle" name="Simulation" project="upt.social.simulation"/>
+	<bundle bundleID="797" class="noccuda.Activator" localization="OSGI-INF/l10n/bundle" name="NOCCUDA" project="NOCCUDA"/>
+	<bundle bundleID="798" localization="OSGI-INF/l10n/bundle" name="Io" project="upt.io"/>
+	<bundle bundleID="799" localization="OSGI-INF/l10n/bundle" name="Listeners" project="upt.listeners"/>
+	<bundle bundleID="800" class="upt.twitter.ui.Activator" localization="OSGI-INF/l10n/bundle" name="Ui" project="upt.twitter.ui"/>
+	<bundle bundleID="801" localization="OSGI-INF/l10n/bundle" name="Test_Erase_Me" project="Test Erase Me"/>
+	<bundle bundleID="802" class="upt.loading.Activator" localization="OSGI-INF/l10n/bundle" name="Loading" project="upt.loading"/>
+	<bundle bundleID="803" localization="OSGI-INF/l10n/bundle" name="Threading" project="upt.threading"/>
+	<bundle bundleID="804" localization="OSGI-INF/l10n/bundle" name="Ui" project="upt.social.ui"/>
+	<bundle bundleID="805" class="upt.twitter.product.Activator" localization="OSGI-INF/l10n/bundle" name="Product" project="upt.twitter.product"/>
+</map>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Listeners
+Bundle-SymbolicName: upt.listeners
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.listeners,
+ upt.listeners.keyboard,
+ upt.listeners.mouse

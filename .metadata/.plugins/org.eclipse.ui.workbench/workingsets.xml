@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1318252927720_1" label="NOC" name="NOC">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/upt.noc.ui" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/upt.noc.simulation" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/upt.noc.product" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1318252967860_3" label="SocialSim" name="SocialSim">
+<item elementID="=upt.social.simulation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.social.model" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.social.product" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.social.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1318252995434_4" label="Common" name="Common">
+<item elementID="=upt.listeners" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.io" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.loading" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.threading" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1335685819698_5" label="Twitter" name="Twitter">
+<item elementID="=upt.twitter.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.twitter.product" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=upt.twitter.model" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1318252678807_0" label="Window Working Set" name="Aggregate for window 1318252678807"/>
+<mruList name="Twitter"/>
+</workingSetManager>

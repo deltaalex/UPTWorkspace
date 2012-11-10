@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: upt.twitter.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: upt.twitter.model.Activator
+Export-Package: upt.twitter.model,
+ upt.twitter.model.engine,
+ upt.twitter.model.timing
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ upt.threading,
+ org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

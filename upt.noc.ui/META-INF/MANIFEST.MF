@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui
+Bundle-SymbolicName: upt.noc.ui
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: upt.noc.simulation,
+ upt.listeners,
+ upt.ui
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: noc.ui.input,
+ noc.ui.scroll,
+ noc.ui.utils,
+ upt.noc.ui,
+ upt.noc.ui.assist

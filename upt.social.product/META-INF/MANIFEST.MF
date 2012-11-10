@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Product
+Bundle-SymbolicName: upt.social.product
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: upt.social.product.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ upt.social.model,
+ upt.social.simulation,
+ upt.loading,
+ upt.social.ui,
+ upt.ui
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.social.product

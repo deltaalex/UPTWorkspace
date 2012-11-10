@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui
+Bundle-SymbolicName: upt.social.ui
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: upt.listeners,
+ upt.social.model,
+ upt.social.simulation,
+ upt.ui,
+ upt.loading
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.social.ui,
+ upt.social.ui.graphics,
+ upt.social.ui.graphics.population,
+ upt.social.ui.graphics.population.ring,
+ upt.social.ui.middleware

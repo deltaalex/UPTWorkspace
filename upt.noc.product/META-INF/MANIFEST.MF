@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Product
+Bundle-SymbolicName: upt.noc.product
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: upt.noc.product.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ upt.noc.ui,
+ upt.noc.simulation,
+ upt.loading,
+ upt.threading,
+ upt.ui
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: misc,
+ upt.noc.product

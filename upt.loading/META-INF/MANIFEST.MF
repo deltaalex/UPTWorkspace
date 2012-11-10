@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Loading
+Bundle-SymbolicName: upt.loading
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: upt.loading.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ upt.ui
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.loading,
+ upt.loading.ui

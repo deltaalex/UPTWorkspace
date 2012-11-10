@@ -1,0 +1,4 @@
+#Sun Nov 11 01:09:54 EET 2012
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="Apache Ode 1.x Runtime" location\="E\:/apache/" name\="Apache Ode 1.x Runtime" runtime-type-id\="org.eclipse.bpel.apache.ode.runtime.rt" server_definition_id\="org.eclipse.bpel.apache.ode.runtime.rt" timestamp\="0">\r\n    <map key\="generic_server_instance_properties" ode.home\="E\:/apache/webapps/ode" port\="8080" tomcat.home\="E\:/apache/"/>\r\n  </runtime>\r\n</runtimes>\r\n
+eclipse.preferences.version=1

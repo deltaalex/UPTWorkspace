@@ -1,0 +1,5 @@
+-t Tag
+-l Predefined location
+-lat Latitude
+-lon Longitude
+-rad Location radius in km

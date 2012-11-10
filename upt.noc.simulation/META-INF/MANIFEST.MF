@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simulation
+Bundle-SymbolicName: upt.noc.simulation
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: upt.noc.simulation,
+ upt.noc.simulation.threading,
+ upt.noc.state,
+ upt.noc.structures
+Require-Bundle: upt.threading
