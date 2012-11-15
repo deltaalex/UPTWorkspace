@@ -1,0 +1,246 @@
+package upt.social.generation.advanced;
+
+import java.util.Random;
+import java.util.Vector;
+
+import upt.social.generation.SmallWorldSocialGenerator;
+import upt.social.generation.SocialGenerator;
+import upt.social.model.INode;
+import upt.social.model.NodeCoordinate;
+import upt.social.model.STATE;
+import upt.social.model.SocialNetwork;
+import upt.social.model.analog.AnalogAgent;
+import upt.social.model.factory.ISocialModelFactory;
+import upt.social.state.SimConfig;
+
+/**
+ * Creates a Watts-Strogratz small-world network with degree distribution:
+ * network of agents with high clustering, small path and also power law degree
+ * distribution. <br>
+ * Can be parameterized. Models the WS-DD network proposed by Y. W. Chen et al,
+ * 2007.
+ * 
+ * @See <a href="www.physics.fudan.edu.cn/tps/people/jphuang/Mypapers/JPA-1.pdf"
+ *      >PDF Paper</a>
+ */
+public class WSDDSocialGenerator extends SocialGenerator
+{
+	// Define the minimum and maximum sizes of a vertex cluster
+	private static final int CLUSTER_MIN_SIZE = 10; // 5;
+	private static final int CLUSTER_MAX_SIZE = 40; // 15;
+
+	public WSDDSocialGenerator(ISocialModelFactory modelFactory)
+	{
+		super(modelFactory);
+	}
+
+	/**
+	 * Creates a parameterized small-world network with degree distribution
+	 * 
+	 * @param WIDTH
+	 *        Width of the mesh
+	 * @param HEIGHT
+	 *        Height of the mesh
+	 * @param stubbornAgents
+	 *        List of coordinates at which stubborn agents will be inserted. The
+	 *        data structure also contains their STATE.
+	 * @param absurdAgents
+	 *        List of coordinates at which absurd agents will be inserted.
+	 * @return The new network
+	 */
+	@Override
+	public SocialNetwork createNewNetwork(int WIDTH, int HEIGHT, Vector<NodeCoordinate> stubbornAgents,
+		Vector<NodeCoordinate> absurdAgents, String links)
+	{
+		SocialNetwork network = new SocialNetwork();
+		Vector<INode> nodes = new Vector<INode>();
+		INode[][] meshNodes;
+
+		if (stubbornAgents.size() >= WIDTH * HEIGHT)
+		{
+			throw new IllegalArgumentException("Too many stubborn agents in network !");
+		}
+		meshNodes = new INode[WIDTH][HEIGHT];
+
+		time = System.nanoTime();
+
+		// normal agents
+		for (int i = 0; i < WIDTH; ++i)
+		{
+			for (int j = 0; j < HEIGHT; ++j)
+			{
+				meshNodes[i][j] = factory.createAgent("A" + ((i * WIDTH) + j + 1), SimConfig.isOpinionated,
+					SimConfig.MinSleep, SimConfig.MaxSleep);
+			}
+		}
+
+		// absurd agents
+		for (NodeCoordinate p: absurdAgents)
+		{
+			meshNodes[p.x][p.y] = factory.createAbsurdAgent("AA" + (p.x * WIDTH + p.y + 1), SimConfig.isOpinionated,
+				SimConfig.MinSleep, SimConfig.MaxSleep);
+		}
+
+		// add stubborn agents and compute ProFactor
+		SimConfig.ProFactor = 0;
+		for (NodeCoordinate p: stubbornAgents)
+		{
+			meshNodes[p.x][p.y] = factory.createStubbornAgent("SA" + (p.x * WIDTH + p.y + 1), p.getState(),
+				SimConfig.MinSleep, SimConfig.MaxSleep);
+			if (p.getState().equals(STATE.YES))
+			{
+				SimConfig.ProFactor++;
+			}
+		}
+		SimConfig.ProFactor /= 1.0 * stubbornAgents.size();
+		Random rand = new Random();
+
+		// mesh to list
+		for (int i = 0; i < WIDTH; ++i)
+		{
+			for (int j = 0; j < HEIGHT; ++j)
+			{
+				nodes.add(meshNodes[i][j]);
+			}
+		}
+
+		// Create clusters
+		Vector<INode> clusters = new Vector<INode>();
+		int sizeK = 0;
+
+		while (sizeK < WIDTH * HEIGHT)
+		{
+			// the cluster size is within the default minimum and maximum
+			// cluster range but is also truncated at the end of the population
+			int cluster = Math.min(getDistributedClusterSize(rand), WIDTH * HEIGHT - sizeK);
+			System.out.println(cluster);
+
+			// cluster next group of agents in the "mesh"
+			for (int i = sizeK; i < sizeK + cluster; ++i)
+			{
+				for (int j = i + 1; j < sizeK + cluster; ++j)
+				{
+					if (i != j && j > i)
+					{
+						// clustering = 1 : point-to-point
+						nodes.get(i).addFriendBi(nodes.get(j));
+					}
+				}
+			}
+
+			// store cluster information (hack!)
+			// cluster name example: "5 11", meaning that nodes 5 to 11
+			// (inclusive) belong to this cluster
+			clusters.add(new AnalogAgent(sizeK + " " + (sizeK + cluster - 1), false, 0, 0));
+			// update number of clustered agents
+			sizeK += cluster;
+		}
+
+		// debug
+		if (sizeK > WIDTH * HEIGHT)
+		{
+			System.err.println("Error in creatinf WSDD network");
+			System.exit(sizeK - WIDTH * HEIGHT);
+		}
+
+		// create small-world ring out of vertices
+		int nv = clusters.size();
+		int k = 2;
+		for (int i = 0; i < nv; ++i)
+		{
+			for (int j = i - k; j <= i + k; ++j)
+			{
+				// each cluster connects to k left and right neighbors
+				if (i != j)
+				{
+					if (j < 0)
+					{
+						clusters.get(i).addFriendUni(clusters.get(nv + j));
+					}
+					else if (j >= nv)
+					{
+						clusters.get(i).addFriendUni(clusters.get(j % nv));
+					}
+					else
+					{
+						clusters.get(i).addFriendUni(clusters.get(j));
+					}
+				}
+			}
+		}
+
+		// create long range links
+		SocialNetwork clusterNetwork = new SocialNetwork();
+		clusterNetwork.addNodes(clusters);
+		clusterNetwork = new SmallWorldSocialGenerator().createSmallWorldNetwork(clusterNetwork, 0.5);
+		clusters = clusterNetwork.getNodes();
+
+		/**
+		 * Transpose cluster connections to actual cluster nodes<br>
+		 */
+
+		// for each cluster
+		for (INode cluster: clusters)
+		{
+			// get node range for this cluster (hack)
+			int srcStart = Integer.parseInt(cluster.getId().split(" ")[0]);
+			int srcEnd = Integer.parseInt(cluster.getId().split(" ")[1]);
+
+			// for each cluster link
+			for (INode friend: cluster.getFriends())
+			{
+				// get node range for friend cluster
+				int destStart = Integer.parseInt(friend.getId().split(" ")[0]);
+				int destEnd = Integer.parseInt(friend.getId().split(" ")[1]);
+
+				// choose link between two random nodes
+				INode from = nodes.get(rand.nextInt(srcEnd - srcStart + 1) + srcStart);
+				INode to = nodes.get(rand.nextInt(destEnd - destStart + 1) + destStart);
+
+				from.addFriendBi(to);
+			}
+		}
+
+		network.addNodes(nodes);
+
+		time = System.nanoTime() - time;
+
+		return network;
+	}
+
+	/**
+	 * Return a power law (Gaussian) distributed cluster size. <br>
+	 * Most occurrent (mean) is CLUSTER_MIN_SIZE. <br>
+	 * Least occurrent is CLUSTER_MAX_SIZE. <br>
+	 * 
+	 * @param rand
+	 *        An initialized random generator used for all gaussian numbers.
+	 * @return a integer between [CLUSTER_MIN_SIZE, CLUSTER_MAX_SIZE] according
+	 *         to a power law distribution.
+	 */
+	private int getDistributedClusterSize(Random rand)
+	{
+		// Gaussian number between -3 and +3 with mean 0.
+		double x = rand.nextGaussian();
+
+		// the closer to 0, the smaller the cluster
+		// the further from 0, the larger the cluster
+		double dx = Math.abs(x);
+		if (dx > 3)
+		{
+			dx = 3;
+		}
+		dx /= 3.0;
+
+		return CLUSTER_MIN_SIZE + (int)(rand.nextInt(CLUSTER_MAX_SIZE - CLUSTER_MIN_SIZE) * dx);
+
+//		if (dx < 0.2)
+//		{
+//			return rand.nextInt(CLUSTER_MIN_SIZE) + 1;
+//		}
+//		else
+//		{
+//			return CLUSTER_MIN_SIZE + 1 + (int) ((CLUSTER_MAX_SIZE - CLUSTER_MIN_SIZE) * (dx - 0.2));
+//		}
+	}
+}

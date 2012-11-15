@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="E:\Java" version="1.6.0_25">
+<libraryInfo home="E:\Java" version="1.7.0_09">
 <bootpath>
 <entry path="E:\Java\jre\lib\resources.jar"/>
 <entry path="E:\Java\jre\lib\rt.jar"/>
@@ -8,7 +8,7 @@
 <entry path="E:\Java\jre\lib\jsse.jar"/>
 <entry path="E:\Java\jre\lib\jce.jar"/>
 <entry path="E:\Java\jre\lib\charsets.jar"/>
-<entry path="E:\Java\jre\lib\modules\jdk.boot.jar"/>
+<entry path="E:\Java\jre\lib\jfr.jar"/>
 <entry path="E:\Java\jre\classes"/>
 </bootpath>
 <extensionDirs>

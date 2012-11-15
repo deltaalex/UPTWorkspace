@@ -26,8 +26,8 @@ import upt.social.state.SimConfig;
 public class WSDDSocialGenerator extends SocialGenerator
 {
 	// Define the minimum and maximum sizes of a vertex cluster
-	private static final int CLUSTER_MIN_SIZE = 5;
-	private static final int CLUSTER_MAX_SIZE = 15;
+	private static final int CLUSTER_MIN_SIZE = 10; // 5;
+	private static final int CLUSTER_MAX_SIZE = 40; // 15;
 
 	public WSDDSocialGenerator(ISocialModelFactory modelFactory)
 	{
@@ -232,13 +232,16 @@ public class WSDDSocialGenerator extends SocialGenerator
 		}
 		dx /= 3.0;
 
-		if (dx < 0.2)
-		{
-			return rand.nextInt(CLUSTER_MIN_SIZE) + 1;
-		}
-		else
-		{
-			return CLUSTER_MIN_SIZE + 1 + (int) ((CLUSTER_MAX_SIZE - CLUSTER_MIN_SIZE) * (dx - 0.2));
-		}
+		return CLUSTER_MIN_SIZE + (int) (rand.nextInt(CLUSTER_MAX_SIZE - CLUSTER_MIN_SIZE) * dx);
+
+		// if (dx < 0.2)
+		// {
+		// return rand.nextInt(CLUSTER_MIN_SIZE) + 1;
+		// }
+		// else
+		// {
+		// return CLUSTER_MIN_SIZE + 1 + (int) ((CLUSTER_MAX_SIZE -
+		// CLUSTER_MIN_SIZE) * (dx - 0.2));
+		// }
 	}
 }

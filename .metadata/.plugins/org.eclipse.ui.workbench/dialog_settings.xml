@@ -10,6 +10,18 @@
 			<item value="E:\0 Work\Eclipse Workspace\prefs\allprefs.epf"/>
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1440" key="dialogWidth"/>
+		<item value="743" key="dialogHeight"/>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="textEntries">
+		</list>
+	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="157" key="DIALOG_Y_ORIGIN"/>
 		<item value="655" key="DIALOG_X_ORIGIN"/>
