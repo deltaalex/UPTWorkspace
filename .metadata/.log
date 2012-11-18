@@ -8,3 +8,33 @@ Command-line arguments:  -data E:\0 Work\Eclipse Workspace\UPTWorkspace -os win3
 
 !ENTRY org.eclipse.ui 4 4 2012-11-15 17:52:52.509
 !MESSAGE Unable to find Action Set: org.eclipse.wb.core.ui.actionset
+!SESSION 2012-11-15 19:19:19.053 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data E:\0 Work\Eclipse Workspace\UPTWorkspace -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2012-11-15 19:19:22.854
+!MESSAGE Unable to find Action Set: org.eclipse.wb.core.ui.actionset
+!SESSION 2012-11-15 22:55:04.364 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2012-11-15 22:55:13.365
+!MESSAGE Unable to find Action Set: org.eclipse.wb.core.ui.actionset
+!SESSION 2012-11-15 23:00:20.884 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2012-11-15 23:00:24.423
+!MESSAGE Unable to find Action Set: org.eclipse.wb.core.ui.actionset

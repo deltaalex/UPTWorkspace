@@ -6,8 +6,8 @@
 	<bundle bundleID="807" class="upt.twitter.model.Activator" localization="OSGI-INF/l10n/bundle" name="Model" project="upt.twitter.model"/>
 	<bundle bundleID="808" localization="OSGI-INF/l10n/bundle" name="Simulation" project="upt.social.simulation"/>
 	<bundle bundleID="809" class="noccuda.Activator" localization="OSGI-INF/l10n/bundle" name="NOCCUDA" project="NOCCUDA"/>
-	<bundle bundleID="810" localization="OSGI-INF/l10n/bundle" name="Io" project="upt.io"/>
 	<bundle bundleID="811" localization="OSGI-INF/l10n/bundle" name="Listeners" project="upt.listeners"/>
+	<bundle bundleID="810" localization="OSGI-INF/l10n/bundle" name="Io" project="upt.io"/>
 	<bundle bundleID="812" class="upt.twitter.ui.Activator" localization="OSGI-INF/l10n/bundle" name="Ui" project="upt.twitter.ui"/>
 	<bundle bundleID="813" localization="OSGI-INF/l10n/bundle" name="Test_Erase_Me" project="Test Erase Me"/>
 	<bundle bundleID="814" class="upt.loading.Activator" localization="OSGI-INF/l10n/bundle" name="Loading" project="upt.loading"/>
